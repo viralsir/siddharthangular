@@ -1,0 +1,8 @@
+<h1>Employee Entry Form</h1>
+<form class="form-group" [formGroup]="this.empFormRef" (ngSubmit)="addEmployee()">
+  Name : <input class="form-control" type="text" formControlName="name"> <br/>
+  Salary : <input class="form-control" type="number" formControlName="salary"> <br/>
+  <input type="submit" class="btn btn-outline-primary">
+  <input type="reset" class="btn btn-outline-danger">
+</form>
+<h1>{{msg}}</h1>

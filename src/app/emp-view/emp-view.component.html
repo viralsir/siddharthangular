@@ -1,0 +1,12 @@
+<p>emp-view works!</p>
+<table class="table table-success">
+  <tr>
+    <th>Name</th>
+    <th>Salary</th>
+  </tr>
+  <tr *ngFor="let employee of this.empservice.employeelist">
+    <td>{{employee.name}}</td>
+    <td>{{employee.salary}}</td>
+
+  </tr>
+</table>
